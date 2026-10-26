@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+.ipynb_checkpoints/
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# NOTE: data/output_report.xlsx is intentionally committed for the Week 10 submission.
+# Excel lock files
+~$*.xlsx

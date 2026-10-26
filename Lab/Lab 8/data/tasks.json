@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "description": "Study OOP classes and objects",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "description": "Push OOP Task Manager to GitHub",
+        "completed": false
+    }
+]

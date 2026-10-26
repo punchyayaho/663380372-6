@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "description": "Finish Week 7 lab - Task Manager CLI",
+        "priority": "Medium",
+        "completed": true
+    },
+    {
+        "id": 2,
+        "description": "Push project to GitHub and submit link",
+        "priority": "Low",
+        "completed": false
+    }
+]

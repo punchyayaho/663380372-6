@@ -1,0 +1,51 @@
+{
+  "tasks": [
+    {
+      "name": "Merge project documents",
+      "type": "merge_pdfs",
+      "input_files": [
+        "documents/01_project_overview.pdf",
+        "documents/02_task_list.pdf",
+        "documents/03_progress_summary.pdf"
+      ],
+      "output_file": "documents/output/merged_docs.pdf"
+    },
+    {
+      "name": "Generate weekly report from template",
+      "type": "generate_report",
+      "template": "templates/report_template.docx",
+      "output_file": "documents/output/generate_report.docx",
+      "context": {
+        "report_title": "Enhanced Task Manager - Weekly Report",
+        "student_name": "เมธาวี สิทธิชัยเนตร",
+        "student_id": "663380372-6",
+        "project_name": "Enhanced Task Manager",
+        "total_tasks": 6,
+        "completed_tasks": 4,
+        "summary": "This week the team finished the task CRUD module and the priority filter. Reporting and reminders are still in progress."
+      },
+      "table": {
+        "title": "Task Status",
+        "headers": ["Task ID", "Task", "Priority", "Status"],
+        "rows": [
+          ["T-01", "Design database schema", "High", "Done"],
+          ["T-02", "Create / edit / delete tasks", "High", "Done"],
+          ["T-03", "Priority & due-date filter", "Medium", "Done"],
+          ["T-04", "Search tasks by keyword", "Medium", "Done"],
+          ["T-05", "Weekly PDF/Word report", "Medium", "In progress"],
+          ["T-06", "Email reminders", "Low", "To do"]
+        ]
+      }
+    },
+    {
+      "name": "Watermark merged document",
+      "type": "add_watermark",
+      "input_file": "documents/output/merged_docs.pdf",
+      "output_file": "documents/output/watermarked_document.pdf",
+      "watermark_text": "CONFIDENTIAL",
+      "opacity": 0.25,
+      "font_size": 80,
+      "angle": 45
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+.ipynb_checkpoints/
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Split PDF parts (if implemented)
+documents/*_part_*.pdf
+
+# NOTE: documents/output_report.docx and documents/merged_output.pdf are
+# intentionally committed for Week 11 submission (screenshots are in /screenshots).
